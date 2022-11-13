@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(120deg, rgba(0, 131, 139, 0.842), rgba(134, 212, 205, 0.596));
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.c-justify {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+p {
+  font-weight: 600;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.c-card {
+  padding: 10px 20px;
+  margin: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgba(59, 147, 224, 0.322); 
+  max-width: 700px;
+  
+  h2 {
+      color: black;
+      text-shadow: 2px 2px rgba(240, 248, 255, 0.241);
+  }
+  
+  a {
+      color: #0b0089;
+      text-decoration: none;
+  }
+}
+
+.c-name {
+  font-weight: 800;
+  font-size: 18px;
+
+  &--second {
+    font-weight: 700;
+    font-size: 17px;
+  }
+}
+
+.c-btn {
+  margin: 20px;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  background-color: #0b0089;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4f48a0;
+  }
+}
+
+ol {
+  border: 1px #28114d;
+  position: relative;
+}
+
+ol:after {
+  content  : "";
+  margin: 20px;
+  border-radius: 20px;
+  position : absolute;
+  z-index  : 2;
+  bottom   : 0;
+  left     : -500px;
+  pointer-events   : none;
+  background-image : linear-gradient(to left, rgba(255, 255, 255, 0), rgba(88, 79, 207, 0.61) 80%);
+  width    : 1000px;
+  height   : 4em;
+}
+
+.c-sep {
+  height: 1px;
+  background-color: black;
+  margin: 20px 0px;
+}
